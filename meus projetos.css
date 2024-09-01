@@ -1,0 +1,227 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .poppins-thin {
+        font-family: "Poppins", system-ui;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", system-ui;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", system-ui;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", system-ui;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", system-ui;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", system-ui;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", system-ui;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", system-ui;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .poppins-thin-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .poppins-extralight-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 200;
+        font-style: italic;
+      }
+      
+      .poppins-light-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .poppins-regular-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .poppins-semibold-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 600;
+        font-style: italic;
+      }
+      
+      .poppins-bold-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .poppins-extrabold-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 800;
+        font-style: italic;
+      }
+      
+      .poppins-black-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 900;
+        font-style: italic;
+      }      
+}
+
+body{
+    background-color: rgb(22, 83, 153);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+h2.titulo{
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span{
+  color: white;
+}
+
+button:hover {
+  box-shadow: 0px 0px 8px rgb(204, 202, 202);
+  transform:scale(1.05) ;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*ESTILO DO CABEÇALHO*/
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s; ;
+}
+
+header a:hover{
+    color: gray;
+    transform:scale(1.05) ;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 80px;
+}
+
+/* ESTILO DAS ESPECIALIDADES*/
+section.especialidades{
+    padding: 40px 4%;
+  }
+  
+  section.especialidades .flex{
+    gap: 60px;
+    cursor: pointer;
+  }
+  
+  .especialidades .especialidade-box{
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 25px;
+    transition: 0.2s;
+  }
+  
+  .especialidades .especialidade-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(204, 202, 202, 0.63);
+  }
+  
+  .especialidades .especialidade-box i{
+    font-size: 50px;
+    color: white;
+  }
+  
+  .especialidades .especialidade-box{
+    font-size: 20px;
+  }
+  
+  .especialidades .especialidade-box h3{
+    font-size: 28px;
+    margin:  15px 0;
+  }
+  
+  

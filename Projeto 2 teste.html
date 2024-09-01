@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="projeto 2.css">
+
+    <title>Calculadora de Economia de Energia Solar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Economia de Energia Solar</h1>
+    <form id="solar-form">
+        <label for="consumo">Consumo Médio de Energia (kWh/mês):</label>
+        <input type="number" id="consumo" required>
+
+        <label for="custo">Custo Médio de Energia (R$/kWh):</label>
+        <input type="number" id="custo" step="0.01" required>
+
+        <label for="painel">Tamanho do Sistema Solar (kWp):</label>
+        <input type="number" id="painel" step="0.01" required>
+
+        <button type="button" onclick="calcularEconomia()">Calcular Economia</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calcularEconomia() {
+            const consumo = parseFloat(document.getElementById('consumo').value);
+            const custo = parseFloat(document.getElementById('custo').value);
+            const painel = parseFloat(document.getElementById('painel').value);
+
+            if (isNaN(consumo) || isNaN(custo) || isNaN(painel)) {
+                alert('Por favor, preencha todos os campos corretamente.');
+                return;
+            }
+
+            const geracaoMensal = painel * 150; // Exemplo: cada kWp gera 150 kWh/mês
+            const economiaMensal = geracaoMensal * custo;
+            const economiaAnual = economiaMensal * 12;
+
+            document.getElementById('result').innerHTML = `
+                <h2>Resultados</h2>
+                <p>Economia Mensal Estimada: R$ ${economiaMensal.toFixed(2)}</p>
+                <p>Economia Anual Estimada: R$ ${economiaAnual.toFixed(2)}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

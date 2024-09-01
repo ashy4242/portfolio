@@ -1,0 +1,88 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Fonte moderna e clean */
+    background-color: #f0f4f8; /* Fundo claro */
+    color: #333; /* Texto escuro para legibilidade */
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b; /* Cor verde para o título */
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+form {
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555; /* Cinza suave para os labels */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #00796b; /* Cor verde ao focar no campo */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b; /* Botão verde */
+    color: #fff; /* Texto branco no botão */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Escurece no hover */
+}
+
+#result {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #fff; /* Fundo branco para o resultado */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result h2 {
+    color: #00796b; /* Cor verde para o subtítulo */
+    margin-bottom: 15px;
+}
+
+#result p {
+    font-size: 1.1rem;
+    color: #333;
+}

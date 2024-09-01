@@ -1,0 +1,397 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .poppins-thin {
+        font-family: "Poppins", system-ui;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", system-ui;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", system-ui;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", system-ui;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", system-ui;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", system-ui;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", system-ui;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", system-ui;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .poppins-thin-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .poppins-extralight-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 200;
+        font-style: italic;
+      }
+      
+      .poppins-light-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .poppins-regular-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .poppins-semibold-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 600;
+        font-style: italic;
+      }
+      
+      .poppins-bold-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .poppins-extrabold-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 800;
+        font-style: italic;
+      }
+      
+      .poppins-black-italic {
+        font-family: "Poppins", system-ui;
+        font-weight: 900;
+        font-style: italic;
+      }      
+}
+
+body{
+    background-color: rgb(22, 83, 153);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+h2.titulo{
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span{
+  color: white;
+}
+
+button:hover, form .enviar input:hover {
+  box-shadow: 0px 0px 8px rgb(204, 202, 202);
+  transform:scale(1.05) ;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*ESTILO DO CABEÇALHO*/
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s; ;
+}
+
+header a:hover{
+    color: gray;
+    transform:scale(1.05) ;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 80px;
+}
+
+
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+  padding: 10px 25%;
+}
+
+section.topo-do-site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.topo-do-site h1{
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.topo-do-site .img-topo-site img{
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+  0% {
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+
+/* ESTILO DAS ESPECIALIDADES*/
+section.especialidades{
+  padding: 40px 4%;
+}
+
+section.especialidades .flex{
+  gap: 60px;
+  cursor: pointer;
+}
+
+.especialidades .especialidade-box{
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 25px;
+  transition: 0.2s;
+}
+
+.especialidades .especialidade-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(204, 202, 202, 0.63);
+}
+
+.especialidades .especialidade-box i{
+  font-size: 50px;
+  color: white;
+}
+
+.especialidades .especialidade-box{
+  font-size: 20px;
+}
+
+.especialidades .especialidade-box h3{
+  font-size: 28px;
+  margin:  15px 0;
+}
+
+
+/* ESTILO DO SOBRE*/
+section.sobre{
+  padding: 80px 5%;
+}
+
+section.sobre .flex{
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre h2{
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+  color: white;
+  display: block;
+}
+
+.sobre .txt-sobre p{
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 2s;
+}
+
+/* ESTILO DO PORTFÓLIO*/
+section.portfolio{
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px rgba(128, 128, 128, 0.308);
+}
+
+section.portfolio .flex{
+  justify-content: space-around;
+  gap: 60px;
+}
+
+section.portfolio .flex .projeto{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 30px;
+  transition: 0.2s;
+}
+
+section.portfolio .flex .projeto button{
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  border: 0;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+/* ESTILO DE FORMULÁRIO DE CONTATO*/
+section.formulario{
+  padding: 80px 4%;
+}
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius:  15px;
+  font-size: 18px;
+}
+
+form textarea{
+  resize: none;
+  max-height: 300px;
+}
+
+form .enviar{
+  margin-top: 40px;
+  text-align: center;
+}
+
+form .enviar input{
+  width: 120px;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/*ESTILO DE RODAPÉ*/
+
+footer{
+  padding: 60px 4%;
+}
+footer .flex{
+  justify-content: space-between;
+}
+
+footer .line-footer p i{
+  color: white;
+  font-size: 22px;
+}
+
+footer .line-footer{
+  padding: 20px 0; 
+}
+
+.borda{
+  border-top: 2px solid white;
+}
